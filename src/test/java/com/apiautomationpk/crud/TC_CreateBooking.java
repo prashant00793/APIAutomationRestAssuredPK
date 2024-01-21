@@ -26,7 +26,7 @@ public class TC_CreateBooking extends BaseTest {
         validatableResponse.statusCode(200);
         jsonPath = JsonPath.from(response.asString());
         String bookingID = jsonPath.getString("bookingid");
-        assertThat.from
+
 
         //Call the payload Block
         //Call the Assertion Block

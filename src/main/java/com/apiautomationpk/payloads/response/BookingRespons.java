@@ -1,6 +1,7 @@
 
 package com.apiautomationpk.payloads.response;
 
+import com.apiautomationpk.payloads.request.Booking;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 

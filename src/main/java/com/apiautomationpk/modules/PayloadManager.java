@@ -1,6 +1,8 @@
 package com.apiautomationpk.modules;
 
 
+import com.apiautomationpk.payloads.request.Booking;
+import com.apiautomationpk.payloads.request.Bookingdates;
 import com.apiautomationpk.utils.FakerUtil;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
