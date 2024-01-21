@@ -19,13 +19,17 @@ import org.testng.annotations.Test;
 import static org.assertj.core.api.Assertions.*;
 
 import java.io.IOException;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
 
 public class TC_CreateBooking extends BaseTest {
+
 
     @Test(groups = {"qa"})
     @Owner("Prashant")
     @Severity(SeverityLevel.CRITICAL)
     @Description("TC#01 -Verify that Create Booking works and ID is generated")
+
 
     public void testCreateBooking() throws IOException {
         //Call the Request Block

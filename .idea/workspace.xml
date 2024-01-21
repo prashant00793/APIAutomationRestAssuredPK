@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4cf079d-98d0-4d90-8ef7-018246d1f5be" name="Changes" comment="apiautomation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/apiautomationpk/payloads/request/Auth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/apiautomationpk/crud/TC_Integration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/apiautomationpk/resource/log4j2.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/apiautomationpk/modules/PayloadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/apiautomationpk/modules/PayloadManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/apiautomationpk/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/apiautomationpk/base/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/apiautomationpk/crud/TC_CreateBooking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/apiautomationpk/crud/TC_CreateBooking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng-p0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng-p0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/apiautomationpk/crud/TC_Integration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/apiautomationpk/crud/TC_Integration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +50,11 @@
     "TestNG.C:/Users/bittu/IdeaProjects/APIAutomationRestAssuredPK/testng.xml.executor": "Run",
     "TestNG.TC_CreateBooking.testCreateBooking.executor": "Run",
     "TestNG.TC_Integration.testCreateBooking.executor": "Run",
+    "TestNG.TC_Integration.testDeletedBookingByGet.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/bittu/IdeaProjects/APIAutomationRestAssuredPK/src/main/java/com/apiautomationpk/payloads/common"
+    "last_opened_file_path": "C:/Users/bittu/IdeaProjects/APIAutomationRestAssuredPK/src/main/java/com/apiautomationpk/payloads/common",
+    "settings.editor.selected.configurable": "copyright"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -68,16 +68,6 @@
     <configuration name="C:/Users/bittu/IdeaProjects/APIAutomationRestAssuredPK/testng-p0.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIAutomationRestAssuredPK" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng-p0.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Users/bittu/IdeaProjects/APIAutomationRestAssuredPK/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="APIAutomationRestAssuredPK" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -103,6 +93,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TC_Integration" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIAutomationRestAssuredPK" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.apiautomationpk.crud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.apiautomationpk.crud" />
+      <option name="MAIN_CLASS_NAME" value="com.apiautomationpk.crud.TC_Integration" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TC_Integration.testCreateBooking" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIAutomationRestAssuredPK" />
       <extension name="coverage">
@@ -121,12 +128,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TC_Integration.testDeletedBookingByGet" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIAutomationRestAssuredPK" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.apiautomationpk.crud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.apiautomationpk.crud" />
+      <option name="MAIN_CLASS_NAME" value="com.apiautomationpk.crud.TC_Integration" />
+      <option name="METHOD_NAME" value="testDeletedBookingByGet" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/bittu/IdeaProjects/APIAutomationRestAssuredPK/testng-p0.xml" />
+        <item itemvalue="TestNG.TC_Integration" />
+        <item itemvalue="TestNG.TC_Integration.testDeletedBookingByGet" />
         <item itemvalue="TestNG.TC_Integration.testCreateBooking" />
         <item itemvalue="TestNG.TC_CreateBooking.testCreateBooking" />
-        <item itemvalue="TestNG.C:/Users/bittu/IdeaProjects/APIAutomationRestAssuredPK/testng.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705838766480</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="apiautomation">
+      <option name="closed" value="true" />
+      <created>1705842676878</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705842676879</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

@@ -53,9 +53,32 @@ public class PayloadManager {
         return paylaod;
     }
 
+    public String updatePayload() throws JsonProcessingException {
+        objectMapper = new ObjectMapper();
+        Booking booking = new Booking();
+        booking.setFirstname(FakerUtil.getUserName());
+        booking.setLastname("Mishra");
+        booking.setTotalprice(123);
+        booking.setDepositpaid(true);
+        booking.setAdditionalneeds("BreakFast");
+
+        Bookingdates bookingdates = new Bookingdates();
+        bookingdates.setCheckin("2022-01-01");
+        bookingdates.setCheckout("2022-01-10");
+        booking.setBookingdates(bookingdates);
+
+        String payload = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(booking);
+        return payload;
+    }
+
     public BookingRespons JsonToObject(String jsonString) throws IOException {
         objectMapper = new ObjectMapper();
         BookingRespons bookingRespons = objectMapper.readValue(jsonString, BookingRespons.class);
+        return bookingRespons;
+    }
+    public Booking JsonToObjectPUT(String jsonString) throws IOException {
+        objectMapper = new ObjectMapper();
+        Booking bookingRespons = objectMapper.readValue(jsonString, Booking.class);
         return bookingRespons;
     }
 
