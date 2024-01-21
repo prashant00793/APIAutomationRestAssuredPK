@@ -11,21 +11,23 @@ import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 public class BaseTest {
 
     //Before Running any Method
     //Rest Assured . Given with Base URI and Payload
 
-    public RequestSpecification requestSpecification;
-    public AssertActions actions;
+    public static RequestSpecification requestSpecification;
+    public static AssertActions actions;
 
-    public PayloadManager payloadManager;
+    public  static PayloadManager payloadManager;
 
-    public JsonPath jsonPath;
-    public Response response;
+    public  static JsonPath jsonPath;
+    public  static Response response;
 
-    public ValidatableResponse validatableResponse;
+    public  static  ValidatableResponse validatableResponse;
 
     @BeforeMethod
     public void setUp() {
@@ -35,14 +37,14 @@ public class BaseTest {
 
         payloadManager = new PayloadManager();
         actions = new AssertActions();
-//        requestSpecification = RestAssured.given()
-//                .baseUri(APIConstants.BASE_URL)
-//                .contentType(ContentType.JSON);
+        requestSpecification = RestAssured.given()
+                .baseUri(APIConstants.BASE_URL)
+                .contentType(ContentType.JSON);
 
-        requestSpecification = new RequestSpecBuilder()
-                .setBaseUri(APIConstants.BASE_URL)
-                .addHeader("Content-Type", "application/json")
-                .build().log().all();
+//        requestSpecification = new RequestSpecBuilder()
+//                .setBaseUri(APIConstants.BASE_URL)
+//                .addHeader("Content-Type", "application/json")
+//                .build().log().all();
 
     }
 
