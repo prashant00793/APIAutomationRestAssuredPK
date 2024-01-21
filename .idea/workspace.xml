@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4cf079d-98d0-4d90-8ef7-018246d1f5be" name="Changes" comment="apiautomation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/apiautomationpk/resource/log4j2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/apiautomationpk/resource/TDP.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/apiautomationpk/modules/PayloadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/apiautomationpk/modules/PayloadManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/apiautomationpk/crud/TC_CreateBooking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/apiautomationpk/crud/TC_CreateBooking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/apiautomationpk/crud/TC_Integration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/apiautomationpk/crud/TC_Integration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/apiautomationpk/endpoints/APIConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/apiautomationpk/endpoints/APIConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/apiautomationpk/resource/TestDataProperties.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/apiautomationpk/utils/PropertyReaderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/apiautomationpk/utils/PropertyReaderUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/apiautomationpk/endpoints/APIConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/apiautomationpk/endpoints/APIConstants.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +50,13 @@
     "TestNG.C:/Users/bittu/IdeaProjects/APIAutomationRestAssuredPK/testng-p0.xml.executor": "Run",
     "TestNG.C:/Users/bittu/IdeaProjects/APIAutomationRestAssuredPK/testng.xml.executor": "Run",
     "TestNG.TC_CreateBooking.testCreateBooking.executor": "Run",
+    "TestNG.TC_Integration.executor": "Run",
     "TestNG.TC_Integration.testCreateBooking.executor": "Run",
     "TestNG.TC_Integration.testDeletedBookingByGet.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/bittu/IdeaProjects/APIAutomationRestAssuredPK/src/main/java/com/apiautomationpk/payloads/common",
-    "settings.editor.selected.configurable": "copyright"
+    "settings.editor.selected.configurable": "copyright.profiles"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -220,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705842676879</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="apiautomation">
+      <option name="closed" value="true" />
+      <created>1705855611194</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705855611194</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
