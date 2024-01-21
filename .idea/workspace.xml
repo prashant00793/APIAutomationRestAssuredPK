@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4cf079d-98d0-4d90-8ef7-018246d1f5be" name="Changes" comment="apiautomation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/apiautomationpk/utils/FakerUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/apiautomationpk/payloads/response/BookingRespons.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/apiautomationpk/modules/PayloadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/apiautomationpk/modules/PayloadManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/apiautomationpk/payloads/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/apiautomationpk/payloads/request/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/apiautomationpk/payloads/Bookingdates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/apiautomationpk/payloads/request/Bookingdates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/apiautomationpk/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/apiautomationpk/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/apiautomationpk/crud/TC_CreateBooking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/apiautomationpk/crud/TC_CreateBooking.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,11 +51,12 @@
     "TestNG.C:/Users/bittu/IdeaProjects/APIAutomationRestAssuredPK/testng.xml.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/bittu/IdeaProjects/APIAutomationRestAssuredPK"
+    "last_opened_file_path": "C:/Users/bittu/IdeaProjects/APIAutomationRestAssuredPK/src/main/java/com/apiautomationpk/payloads/common"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\bittu\IdeaProjects\APIAutomationRestAssuredPK\src\main\java\com\apiautomationpk\payloads\common" />
       <recent name="C:\Users\bittu\IdeaProjects\APIAutomationRestAssuredPK" />
       <recent name="C:\Users\bittu\IdeaProjects\APIAutomationRestAssuredPK\src\test\java" />
     </key>
@@ -98,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705775319239</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="apiautomation">
+      <option name="closed" value="true" />
+      <created>1705818399061</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705818399061</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
