@@ -2,9 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/bittu/IdeaProjects/APIAutomationRestAssuredPK">
-        <classes>
-            <class name="com.apiautomationpk.crud.TC_CreateBooking"></class>
-        </classes>
+        <packages>
+            <package name="com.apiautomationpk.crud.*"></package>
+        </packages>
         <groups>
             <run>
                 <include name="P0"></include>

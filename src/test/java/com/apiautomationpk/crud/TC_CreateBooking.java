@@ -22,7 +22,7 @@ import java.io.IOException;
 
 public class TC_CreateBooking extends BaseTest {
 
-    @Test(groups = {"qa", "P0"})
+    @Test(groups = {"qa"})
     @Owner("Prashant")
     @Severity(SeverityLevel.CRITICAL)
     @Description("TC#01 -Verify that Create Booking works and ID is generated")
@@ -47,7 +47,7 @@ public class TC_CreateBooking extends BaseTest {
         //Call the Assertion Block
     }
 
-    @Test(groups = {"qa", "P0"})
+    @Test(groups = {"qa"})
     @Owner("Prashant")
     @Severity(SeverityLevel.NORMAL)
     @Description("TC#02 -Verify that Create Booking with No Payload")

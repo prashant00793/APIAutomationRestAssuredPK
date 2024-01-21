@@ -1,6 +1,7 @@
 package com.apiautomationpk.modules;
 
 
+import com.apiautomationpk.payloads.request.Auth;
 import com.apiautomationpk.payloads.request.Booking;
 import com.apiautomationpk.payloads.request.Bookingdates;
 import com.apiautomationpk.payloads.response.BookingRespons;
@@ -33,6 +34,7 @@ public class PayloadManager {
         String paylaod = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(booking);
         return paylaod;
     }
+
     public String createPayloadNegative() throws JsonProcessingException {
         objectMapper = new ObjectMapper();
         Booking booking = new Booking();
@@ -55,6 +57,14 @@ public class PayloadManager {
         objectMapper = new ObjectMapper();
         BookingRespons bookingRespons = objectMapper.readValue(jsonString, BookingRespons.class);
         return bookingRespons;
+    }
+
+    public String setToken() throws JsonProcessingException {
+        objectMapper = new ObjectMapper();
+        Auth auth = new Auth();
+        auth.setUsername("admin");
+        auth.setPassword("password123");
+        return objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(auth);
     }
 
 }

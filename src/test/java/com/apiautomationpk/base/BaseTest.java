@@ -3,6 +3,7 @@ package com.apiautomationpk.base;
 import com.apiautomationpk.actions.AssertActions;
 import com.apiautomationpk.endpoints.APIConstants;
 import com.apiautomationpk.modules.PayloadManager;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
@@ -13,6 +14,9 @@ import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class BaseTest {
 
@@ -22,14 +26,14 @@ public class BaseTest {
     public static RequestSpecification requestSpecification;
     public static AssertActions actions;
 
-    public  static PayloadManager payloadManager;
+    public static PayloadManager payloadManager;
 
-    public  static JsonPath jsonPath;
-    public  static Response response;
+    public static JsonPath jsonPath;
+    public static Response response;
 
-    public  static  ValidatableResponse validatableResponse;
+    public static ValidatableResponse validatableResponse;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setUp() {
         //Rest Base URLs of the Rest Assured
         //Base URI
@@ -45,6 +49,18 @@ public class BaseTest {
 //                .setBaseUri(APIConstants.BASE_URL)
 //                .addHeader("Content-Type", "application/json")
 //                .build().log().all();
+
+    }
+
+    public String getToken() throws JsonProcessingException {
+
+        requestSpecification = RestAssured.given().baseUri(APIConstants.BASE_URL).basePath("/auth");
+        String payload = payloadManager.setToken();
+        response = requestSpecification.contentType(ContentType.JSON)
+                .body(payload)
+                .when().post();
+        jsonPath = new JsonPath(response.asString());
+        return jsonPath.getString("token");
 
     }
 
